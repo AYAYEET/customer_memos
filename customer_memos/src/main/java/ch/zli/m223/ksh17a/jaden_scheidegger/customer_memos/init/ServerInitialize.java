@@ -9,6 +9,10 @@ import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.model.customer.Custom
 import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.repository.customer.CustomerRepository;
 import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.repository.memo.MemoRepository;
 
+/*
+ * 
+ * @author Jaden Scheidegger
+ */
 @Component
 public class ServerInitialize implements ApplicationRunner {
 	

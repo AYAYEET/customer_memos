@@ -11,7 +11,10 @@ import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.model.customer.Custom
 import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.repository.customer.CustomerRepository;
 import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.service.exceptions.CustomerAlreadyExistsException;
 import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.service.exceptions.InvalidParamException;
-
+/*
+ * 
+ * @author Jaden Scheidegger
+ */
 @Service
 public class CustomerServiceImpl implements CustomerService {
 	
@@ -39,16 +42,16 @@ public class CustomerServiceImpl implements CustomerService {
 	public Customer getCustomerById(Long id) {
 		
 		if (id == null) {
-			// TODO error handling
+			
 		}
 		
-		return customerRepository.findById(id).orElseThrow(RuntimeException::new); // throw better exception
+		return customerRepository.findById(id).orElseThrow(RuntimeException::new); // throw exception
 	}
 
 	@Override
 	public Customer createCustomer(String name) {
 		
-		// Check input
+		
 		
 		if (name == null) {
 			throw new InvalidParamException(
@@ -56,7 +59,7 @@ public class CustomerServiceImpl implements CustomerService {
 			);
 		}
 		
-		// Check logic: Customer may already exist
+		// customer exists
 		
 		Customer existingCustomer;
 		

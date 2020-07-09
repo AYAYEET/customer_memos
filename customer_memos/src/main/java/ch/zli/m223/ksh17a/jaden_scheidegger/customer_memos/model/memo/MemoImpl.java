@@ -9,7 +9,10 @@ import javax.persistence.ManyToOne;
 
 import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.model.customer.Customer;
 import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.model.customer.CustomerImpl;
-
+/*
+ * 
+ * @author Jaden Scheidegger
+ */
 @Entity(name = "Memo")
 public class MemoImpl implements Memo {
 	

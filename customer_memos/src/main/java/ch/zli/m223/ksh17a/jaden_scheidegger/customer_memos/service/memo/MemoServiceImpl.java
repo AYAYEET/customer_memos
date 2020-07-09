@@ -9,7 +9,10 @@ import org.springframework.stereotype.Service;
 import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.model.memo.Memo;
 import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.model.memo.MemoDto;
 import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.repository.memo.MemoRepository;
-
+/*
+ * 
+ * @author Jaden Scheidegger
+ */
 @Service
 public class MemoServiceImpl implements MemoService {
 	

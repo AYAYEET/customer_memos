@@ -7,7 +7,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.model.customer.Customer;
 import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.model.customer.CustomerImpl;
-
+/*
+ * 
+ * @author Jaden Scheidegger
+ */
 public interface CustomerRepository extends JpaRepository<CustomerImpl, Long> {
 
 	public default List<Customer> findAllCustomers() {

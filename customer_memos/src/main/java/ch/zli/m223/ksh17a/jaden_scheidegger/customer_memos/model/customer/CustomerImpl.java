@@ -11,7 +11,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 import ch.zli.m223.ksh17a.jaden_scheidegger.customer_memos.model.memo.MemoImpl;
-
+/*
+ * 
+ * @author Jaden Scheidegger
+ */
 @Entity(name = "Customer")
 public class CustomerImpl implements Customer {
 	
@@ -28,7 +31,7 @@ public class CustomerImpl implements Customer {
 	)
 	private List<MemoImpl> memos;
 	
-	// for JPA only
+	// for JPA
 	
 	public CustomerImpl() {
 		
