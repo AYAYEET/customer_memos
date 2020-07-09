@@ -49,7 +49,7 @@ public class CustomerRestController {
 	}
 	
 	@GetMapping("/rest/customers/{id}/memos")
-	List<MemoDto> getMemos(@PathVariable("id") Long customerId) {
+	List<MemoDto> getMemos(@PathVariable("ip") Long customerId) {
 		
 		return memoService.getCustomerMemos(customerId);
 	}
